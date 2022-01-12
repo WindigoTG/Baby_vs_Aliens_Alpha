@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=960 height=540></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -27,11 +27,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Attempt4.loader.js";
+      var loaderUrl = buildUrl + "/Attempt5.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Attempt4.data",
-        frameworkUrl: buildUrl + "/Attempt4.framework.js",
-        codeUrl: buildUrl + "/Attempt4.wasm",
+        dataUrl: buildUrl + "/Attempt5.data",
+        frameworkUrl: buildUrl + "/Attempt5.framework.js",
+        codeUrl: buildUrl + "/Attempt5.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Baby_vs_Aliens",
@@ -63,7 +63,7 @@
         }, 5000);
       } else {
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "540px";
       }
       loadingBar.style.display = "block";
 
